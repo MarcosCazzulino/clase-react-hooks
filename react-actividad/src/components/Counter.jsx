@@ -11,7 +11,7 @@ function Counter(){
     }
     const decrementarContador = () =>{
         if (contador > 0){
-        setContador(contador - 1)
+            setContador(contador - 1)
         }
     }
     const resetContador = () => {
@@ -22,18 +22,20 @@ function Counter(){
         <div className='counter'>
             <h1>{contador}</h1>
             <div className='counter-controls'>
-            <button onClick={aumentarContador}>
-                +1 PUNTO
-            </button>
-            {contador == 10 ? <p>Alcanzaste el límite</p> : null}
-            <button  onClick={decrementarContador}>
-                -1 PUNTO
-            </button>
-            {contador == 0 ? <p>Alcanzaste el límite</p> : null}
+                <button onClick={aumentarContador}>
+                    +1 PUNTO
+                </button>
+                {contador == 10 ? <p>Alcanzaste el límite</p> : null}
+            </div>
+            <div className="counter-controls">
+                <button  onClick={decrementarContador}>
+                    -1 PUNTO
+                </button>
+                {contador == 0 ? <p>Alcanzaste el límite</p> : null}
+            </div>
             <button  onClick={resetContador}>
                 RESET
             </button>
-            </div>
         </div>
     )
 }

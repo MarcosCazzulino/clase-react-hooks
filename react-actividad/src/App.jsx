@@ -2,6 +2,7 @@ import Producto from "./components/Producto";
 import UserCard from "./components/UserCard";
 import UserProfile from "./components/UserProfile";
 import Counter from "./components/Counter";
+import FilterProducts from "./components/FilterProducts";
 
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
   return (
     <div>
       <Counter />
+      
+      <FilterProducts />
       {/* <h2>Tarjeta de Usuario (Propuesta 1)</h2>
 
       <UserCard

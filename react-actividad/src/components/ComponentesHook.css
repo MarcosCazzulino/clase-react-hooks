@@ -234,3 +234,31 @@
   padding-top: 15px;
   border-top: 2px solid #ddd;
 }
+
+
+.section-productos{
+  width: 100%;
+}
+
+.lista-productos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.producto{
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.lista-productos li{
+  list-style: none;
+}

@@ -1,0 +1,75 @@
+/* Contenedor general */
+.lista-tareas {
+  font-family: Arial, sans-serif;
+  padding: 1.5rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.lista-tareas h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Lista de tareas */
+.lista-tareas ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-tareas li {
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0;
+  border-radius: 8px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Colores según estado */
+.lista-tareas li.completada {
+  color: #2e7d32;
+  border-left: 5px solid #2e7d32;
+}
+
+.lista-tareas li.en-progreso {
+  color: #ef6c00;
+  border-left: 5px solid #ef6c00;
+}
+
+.lista-tareas li.pendiente {
+  color: #555;
+  border-left: 5px solid #999;
+}
+
+/* Mensaje vacío */
+.lista-tareas .vacio {
+  text-align: center;
+  color: #888;
+  font-style: italic;
+}
+
+/* Estadísticas */
+.lista-tareas .estadisticas {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background: #fff;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.lista-tareas .estadisticas strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
